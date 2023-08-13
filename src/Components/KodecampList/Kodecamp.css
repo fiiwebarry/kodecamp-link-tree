@@ -1,0 +1,87 @@
+
+.text-header{
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+
+.Kodecamp-tab-list{
+
+    width:742px;
+    height:82px;
+    background-color:#EAECF0;
+    
+
+}
+.kodecamp-text-tab{
+    padding:25px;
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 30px;
+   letter-spacing: 0em;
+   text-align: center;
+
+}
+.displayImagetab{
+    margin-left:500px;
+}
+.displayImage{
+    display:none;
+}
+.Icon-text-tab{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:15px;
+}
+.Icon-tab-texter{
+
+    display:flex;
+    justify-content: space-between;
+}
+.task-tab{
+    font-family: Inter;
+   font-size: 17px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+margin-left:110px;
+color:#667085;
+
+
+}
+
+@media screen and (max-width:414px){
+    .Icon-tab-texter{
+        display:flex;
+         flex-direction:column;
+         gap:50px;
+}
+.displayImagetab{
+    display:none
+}
+.displayImage{
+    display:block;
+    margin-left:650px;
+}
+.size-tab{
+    width:140px;
+}
+.task-tab{
+    margin-left:0px;
+    text-align:left;
+    font-size:30px;
+}
+.text-header{
+    font-size:30px;  
+}
+.kodecamp-text-tab{
+    font-size:30px;
+}
+}
