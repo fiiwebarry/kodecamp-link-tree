@@ -1,5 +1,6 @@
 
 import "./Kodecamp.css";
+import { Data } from "./Data";
 import Image from "/src/Assets/Images/profile-image.png";
 import Icon from "/src/Assets/Icon/slack.png";
 import Icon1 from "/src/Assets/Icon/Icon.png";
@@ -20,25 +21,12 @@ const KodeCamp = () => {
             <p className="text-header">John Doe</p>
 
          </div>
-         <div className="Kodecamp-tab-list">
-            <p className="kodecamp-text-tab">Twitter Link</p>
-         </div>
+         {Data.map((data) => {
 
-         <div className="Kodecamp-tab-list">
-            <p className="kodecamp-text-tab">KodeCamp Team</p>
-         </div>
+            const { id, title } = data;
+            return <button key={id}>{title}</button>
+         })}
 
-         <div className="Kodecamp-tab-list">
-            <p className="kodecamp-text-tab">KodeCamp  Books</p>
-         </div>
-
-         <div className="Kodecamp-tab-list">
-            <p className="kodecamp-text-tab">Background Check for Coders</p>
-         </div>
-
-         <div className="Kodecamp-tab-list">
-            <p className="kodecamp-text-tab">Design books</p>
-         </div>
 
          <div className="Icon-text-tab">
             <img src={Icon} alt="" />
